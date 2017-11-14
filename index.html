@@ -2,6 +2,7 @@
 <html lang="en">
 
   <head>
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
     <link rel="shortcut icon" href="./img/dv.png">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -9,6 +10,7 @@
     <meta name="author" content="">
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/styling.css">
     <title>David Veytsman</title>
 
     <!-- Bootstrap core CSS -->
@@ -105,16 +107,14 @@
         </div>
         <div class="container">
 
-          <div class="">
+          <div class="" id="icons">
               <i class="devicon-bootstrap-plain colored"></i>
               <i class="devicon-babel-plain colored"></i>
               <i class="devicon-bitbucket-plain-wordmark colored"></i>
-              <i class="devicon-chrome-plain-wordmark colored"></i>
               <i class="devicon-css3-plain-wordmark colored"></i>
               <i class="devicon-facebook-plain colored"></i>
               <i class="devicon-git-plain colored"></i>
               <i class="devicon-github-plain-wordmark colored"></i>
-              <i class="devicon-google-plain-wordmark colored"></i>
               <i class="devicon-heroku-plain-wordmark colored"></i>
               <i class="devicon-html5-plain-wordmark colored"></i>
               <i class="devicon-jquery-plain-wordmark colored"></i>
@@ -128,6 +128,7 @@
               <i class="devicon-vim-plain colored"></i>
               <i class="devicon-atom-original-wordmark colored"></i>
               <i class="devicon-amazonwebservices-plain-wordmark colored"></i>
+              <img class="redux" width="70px" src="img/logo.png" alt="redux">
 
 
           </div>
@@ -327,9 +328,41 @@
 
     <!-- Contact -->
     <section id="contact">
-      <div class="">
-        <form method="post" action="http://formspree.io/dveyts@yahoo.com"><input type="email" name="_replyto"><textarea   name="body"></textarea><input type="submit" value="Send"></form>
-      </div>
+      <!-- <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">Contact Us</h2>
+            <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <form method="post" action="http://formspree.io/dveyts@yahoo.com">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <input class="form-control" id="name" type="text" name="name" placeholder="Your Name *" required data-validation-required-message="Please enter your name.">
+                  </div>
+                  <div class="form-group">
+                    <input class="form-control" id="email" name="_replyto" type="email" placeholder="Your Email *" required data-validation-required-message="Please enter your email address.">
+                  </div>
+                  <div class="form-group">
+                    <input class="form-control" id="phone" type="tel" name="number" placeholder="Your Phone *" required data-validation-required-message="Please enter your phone number.">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <textarea class="form-control" id="message" placeholder="Your Message *" required name="body" data-validation-required-message="Please enter a message."></textarea>
+                  </div>
+                </div>
+                <div class="col-lg-12 text-center">
+                  <input id="sendMessageButton" value="Send Message"  class="btn btn-primary btn-xl text-uppercase" type="submit" value="Send"></form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
@@ -339,7 +372,7 @@
         </div>
         <div class="row">
           <div class="col-lg-12">
-            <form action="http://formspree.io/dveyts@yahoo.com" id="contactForm" name="sentMessage" novalidate>
+            <form method="post" action="http://formspree.io/dveyts@yahoo.com" id="contactForm" name="sentMessage" novalidate>
               <div class="row">
                 <div class="col-md-6">
                   <div class="form-group">
@@ -636,7 +669,18 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/agency.min.js"></script>
+    <script>
+  	$(window).scroll(function() {
+  		$('#icons').each(function(){
+  		var imagePos = $(this).offset().top;
 
+  		var topOfWindow = $(window).scrollTop();
+  			if (imagePos < topOfWindow+400) {
+  				$(this).addClass("slideExpandUp");
+  			}
+  		});
+  	});
+  </script>
   </body>
 
 </html>
