@@ -7,8 +7,6 @@
   margin-bottom: 60px;
   margin-left: 20px;
 }
-section#team{
-  background-image: url("../img/resume.jpg");
-  background-repeat: no-repeat;
-  background-size: 2400px;
+#team{
+  background-image: url("img/resume.png");
 }
