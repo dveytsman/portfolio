@@ -33,6 +33,10 @@ slideDown
 
 	visibility: visible !important;
 }
+.container{
+  /*background-color: rgba(0, 0, 0, 0.2);*/
+  /*color:black;*/
+}
 
 @keyframes slideDown {
 	0% {
