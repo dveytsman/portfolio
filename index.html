@@ -148,7 +148,7 @@
             <h3 class="section-subheading text-muted">Most Recent Projects</h3>
           </div>
         </div>
-        <div class="row">
+        <div id="portfolii" class="row">
           <div class="col-md-4 col-sm-6 portfolio-item">
             <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
               <div class="portfolio-hover">
@@ -208,7 +208,7 @@
         <div class="row">
           <div class="col-lg-12">
             <ul class="timeline">
-              <li>
+              <li id="kings">
                 <div class="timeline-image">
                   <img class="rounded-circle img-fluid" src="img/kbcc.png" alt="">
                 </div>
@@ -222,7 +222,7 @@
                   </div>
                 </div>
               </li>
-              <li class="timeline-inverted">
+              <li id="hunter" class="timeline-inverted">
                 <div class="timeline-image">
                   <img class="rounded-circle img-fluid" src="img/hunter.png" alt="">
                 </div>
@@ -236,7 +236,7 @@
                   </div>
                 </div>
               </li>
-              <li>
+              <li id="fcc">
                 <div class="timeline-image">
                   <img class="rounded-circle img-fluid" src="img/fcc.png" alt="">
                 </div>
@@ -250,7 +250,7 @@
                   </div>
                 </div>
               </li>
-              <li class="timeline-inverted">
+              <li id="aa" class="timeline-inverted">
                 <div class="timeline-image">
                   <img class="rounded-circle img-fluid" src="img/aa.png" alt="">
                 </div>
@@ -264,7 +264,7 @@
                   </div>
                 </div>
               </li>
-              <li class="timeline-inverted">
+              <li id="last" class="timeline-inverted">
                 <div class="timeline-image">
                   <h4>Be A Part
                     <br>Of My
@@ -647,6 +647,66 @@
   		var topOfWindow = $(window).scrollTop();
   			if (imagePos < topOfWindow+400) {
   				$(this).addClass("slideExpandUp");
+  			}
+  		});
+  	});
+  	$(window).scroll(function() {
+  		$('#portfolii').each(function(){
+  		var imagePos = $(this).offset().top;
+
+  		var topOfWindow = $(window).scrollTop();
+  			if (imagePos < topOfWindow+400) {
+  				$(this).addClass("fadeIn");
+  			}
+  		});
+  	});
+  	$(window).scroll(function() {
+  		$('#kings').each(function(){
+  		var imagePos = $(this).offset().top;
+
+  		var topOfWindow = $(window).scrollTop();
+  			if (imagePos < topOfWindow+400) {
+  				$(this).addClass("fadeIn");
+  			}
+  		});
+  	});
+  	$(window).scroll(function() {
+  		$('#hunter').each(function(){
+  		var imagePos = $(this).offset().top;
+
+  		var topOfWindow = $(window).scrollTop();
+  			if (imagePos < topOfWindow+400) {
+  				$(this).addClass("fadeIn");
+  			}
+  		});
+  	});
+  	$(window).scroll(function() {
+  		$('#fcc').each(function(){
+  		var imagePos = $(this).offset().top;
+
+  		var topOfWindow = $(window).scrollTop();
+  			if (imagePos < topOfWindow+400) {
+  				$(this).addClass("fadeIn");
+  			}
+  		});
+  	});
+  	$(window).scroll(function() {
+  		$('#aa').each(function(){
+  		var imagePos = $(this).offset().top;
+
+  		var topOfWindow = $(window).scrollTop();
+  			if (imagePos < topOfWindow+400) {
+  				$(this).addClass("fadeIn");
+  			}
+  		});
+  	});
+  	$(window).scroll(function() {
+  		$('#last').each(function(){
+  		var imagePos = $(this).offset().top;
+
+  		var topOfWindow = $(window).scrollTop();
+  			if (imagePos < topOfWindow+400) {
+  				$(this).addClass("fadeIn");
   			}
   		});
   	});

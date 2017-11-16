@@ -21,6 +21,30 @@ slideDown
 #icons{
   visibility: hidden;
 }
+#portfolii{
+  visibility: hidden;
+}
+#sharpy{
+  visibility: hidden;
+}
+#domy{
+  visibility: hidden;
+}
+#kings{
+  visibility: hidden;
+}
+#hunter{
+  visibility: hidden;
+}
+#fcc{
+  visibility: hidden;
+}
+#aa{
+  visibility: hidden;
+}
+#last{
+  visibility: hidden;
+}
 .slideDown{
 	animation-name: slideDown;
 	-webkit-animation-name: slideDown;
