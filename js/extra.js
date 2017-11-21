@@ -8,7 +8,7 @@ var pic = document.querySelector("#profile-pic");
       pic.classList.remove("profile-pic");
     }
   };
-  pic.onload = function(){
+  window.onload = function(){
     console.log(window.outerWidth);
     if(window.outerWidth < 768){
       pic.classList.add("profile-pic");
