@@ -21,6 +21,9 @@ slideDown
 #icons{
   visibility: hidden;
 }
+.profile-pic{
+  margin-top: 100px;
+}
 #portfolii{
   visibility: hidden;
 }
