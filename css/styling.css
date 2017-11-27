@@ -19,34 +19,34 @@ slideDown
 */
 
 #icons{
-  visibility: hidden;
+  /*visibility: hidden;*/
 }
 .profile-pic{
   margin-top: 100px;
 }
 #portfolii{
-  visibility: hidden;
+  /*visibility: hidden;*/
 }
 #sharpy{
-  visibility: hidden;
+  /*visibility: hidden;*/
 }
 #domy{
-  visibility: hidden;
+  /*visibility: hidden;*/
 }
 #kings{
-  visibility: hidden;
+  /*visibility: hidden;*/
 }
 #hunter{
-  visibility: hidden;
+  /*visibility: hidden;*/
 }
 #fcc{
-  visibility: hidden;
+  /*visibility: hidden;*/
 }
 #aa{
-  visibility: hidden;
+  /*visibility: hidden;*/
 }
 #last{
-  visibility: hidden;
+  /*visibility: hidden;*/
 }
 .slideDown{
 	animation-name: slideDown;
