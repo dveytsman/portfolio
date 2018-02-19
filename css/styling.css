@@ -17,7 +17,9 @@ justin@justinaguilar.com
 slideDown
 ==============================================
 */
-
+#skills{
+  height: fit-content;
+}
 #icons{
   /*visibility: hidden;*/
 }
